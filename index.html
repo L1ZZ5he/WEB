@@ -3,115 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>锟斤拷</title>
+    <title>我爱学习！</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000000;
             margin: 0;
             padding: 0;
-            color: white; /* 设置全局文字颜色为白色 */
+            background-color: green; /* 背景为绿色 */
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            color: white; /* 文字颜色为白色 */
             display: flex;
-            flex-direction: column;
-            height: 100vh; /* 使页面高度占满整个视口 */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        header {
-            background-color: #f7aa2f;
-            color: rgb(0, 0, 0); /* 头部文字颜色为黑色 */
-            padding: 10px 0;
-            text-align: center;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* 10 列 */
+            grid-template-rows: repeat(10, 1fr); /* 10 行 */
+            gap: 10px; /* 网格之间的间距 */
+            width: 80vw; /* 网格容器宽度 */
+            height: 80vh; /* 网格容器高度 */
         }
-        main {
-            flex: 1; /* 使 main 部分占满剩余空间 */
+        .message {
             display: flex;
-            flex-direction: column;
-            justify-content: center; /* 垂直居中 */
-            align-items: center; /* 水平居中 */
-            text-align: center;
-        }
-        footer {
-            background-color: #000000;
-            color: white; /* 底部文字颜色为白色 */
-            text-align: center;
-            padding: 10px 0;
-        }
-        /* 设置“烫烫烫”部分的样式 */
-        main h2, main p, main ul {
-            color: white;
-            margin: 10px 0; /* 调整间距 */
-        }
-        main ul {
-            list-style-type: none; /* 移除列表符号 */
-            padding: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1); /* 每个格子的背景 */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* 边框 */
+            border-radius: 5px; /* 圆角 */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>锟斤拷锟斤拷</h1>
-    </header>
-
-    <main>
-        <h2>烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-            烫烫烫烫烫烫烫烫烫烫
-       
-
-        </h2>
-    </main>
-
-    <footer>
-        <p>&copy;曾烫啊</p>
-    </footer>
+    <div class="grid-container" id="content">
+        <!-- 使用 JavaScript 动态生成 100 句 "我爱学习！" -->
+        <script>
+            const content = document.getElementById('content');
+            for (let i = 0; i < 100; i++) {
+                const div = document.createElement('div');
+                div.className = 'message';
+                div.textContent = '我爱学习！';
+                content.appendChild(div);
+            }
+        </script>
+    </div>
 </body>
 </html>
